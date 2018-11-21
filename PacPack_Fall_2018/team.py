@@ -8,7 +8,7 @@
 
 from captureAgents import CaptureAgent
 from staffBot import SimpleStaffBot
-from myAgent import MyAgent
+from myAgent import MyAgent, GameTreeAgent
 import distanceCalculator
 import random, time, util, sys
 from game import Directions
@@ -20,7 +20,7 @@ from util import nearestPoint
 #################
 
 def createTeam(firstIndex, secondIndex, isPacman,
-               first='SimpleStaffBot', second='MyAgent', numTraining=0):
+               first='SimpleStaffBot', second='GameTreeAgent', numTraining=0):
   """
   This function should return a list of two agents that will form the
   team, initialized using firstIndex and secondIndex as their agent
